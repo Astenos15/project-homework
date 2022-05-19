@@ -1,0 +1,1092 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.nav-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.4rem !important;
+}
+
+.nav-container .header-logo {
+  height: 3.2rem;
+  margin-left: 2em;
+}
+
+nav {
+  padding: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3em;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+nav .nav-list .nav-link {
+  display: inline-block;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  border: 1px solid transparent;
+}
+
+nav .nav-list .nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav .nav-list .nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.header {
+  display: block;
+  position: relative;
+  font-family: "Karla", sans-serif;
+}
+
+.header .header-grid-container {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.header .header-grid-col-1 {
+  color: #fff;
+  padding: 2rem;
+  height: 40vh;
+}
+
+.header .heading-primary {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 4rem;
+}
+
+.header .heading-secondary {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header .header-btn {
+  border: 1px solid #fff;
+  padding: 1.2rem 4.8rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #087f5b;
+  border: 1px solid transparent;
+  color: #fff;
+  -webkit-transition: all 1ms;
+  transition: all 1ms;
+}
+
+.header .header-btn:hover {
+  cursor: pointer;
+  background-color: #099268;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.featured {
+  padding: 2rem 0;
+}
+
+.featured .featured-box {
+  text-align: center;
+}
+
+.featured .featured-text {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 2.4rem;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  opacity: 50%;
+}
+
+.featured .featured-logo {
+  height: 3.2rem;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  opacity: 50%;
+}
+
+.marketing {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.marketing .marketing-content-header {
+  display: inline-block;
+}
+
+.marketing .marketing-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.marketing .marketing-content .marketing-subheading {
+  color: #099268;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.marketing .marketing-content .marketing-primary-heading {
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.marketing .marketing-content .marketing-text-header {
+  font-size: 2.4rem;
+}
+
+.marketing .marketing-content .marketing-text {
+  font-size: 1.6rem;
+}
+
+.marketing .marketing-logo {
+  height: 15rem;
+}
+
+.marketing .marketing-grid-row {
+  text-align: center;
+}
+
+.marketing .marketing-grid-col {
+  padding: 2rem;
+}
+
+.selling {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.selling .selling-content {
+  text-align: center;
+  color: #fff;
+}
+
+.selling .selling-header {
+  font-size: 3.2rem;
+  font-family: "Playfair Display", serif;
+  margin: 10rem 20rem;
+}
+
+.selling .selling-header-secondary {
+  display: inline-block;
+  padding: 2rem;
+  height: 8rem;
+  width: 8rem;
+  font-size: 3.2rem;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin-bottom: 1.8rem;
+  color: #fff;
+}
+
+.selling .selling-text {
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.selling .selling-row {
+  margin-bottom: 8rem;
+}
+
+.buying {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.4rem 8rem;
+  height: 100vh;
+}
+
+.buying .buying-subheading {
+  color: #099268;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.buying .buying-primary-heading {
+  font-size: 2.4rem;
+}
+
+.buying .buying-img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.buying .buying-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.4rem;
+  color: #fff;
+  background-color: #087f5b;
+  border: 1px solid #fff;
+}
+
+.buying .buying-text-heading {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+  height: 5.2rem;
+  width: 5.2rem;
+  font-size: 2.4rem;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  margin-bottom: 2.4rem;
+}
+
+.buying .buying-text {
+  font-size: 1.4rem;
+}
+
+.about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.2rem 3.2rem;
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.about .about-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.4rem;
+  color: #000;
+  background-color: #fff;
+}
+
+.about .about-text-header {
+  font-size: 3rem;
+}
+
+.about .about-text {
+  font-size: 1.6rem;
+}
+
+.about .about-img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.strategy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.strategy .strategy-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.strategy .strategy-subheading {
+  color: #099268;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.strategy .strategy-primary-heading {
+  font-size: 3.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.strategy .strategy-text {
+  font-size: 1.6rem;
+  margin-bottom: 6.4rem;
+}
+
+.strategy .strategy-grid-col {
+  margin-bottom: 2rem;
+}
+
+.strategy .strategy-grid-title {
+  font-size: 2rem;
+}
+
+.strategy .strategy-grid-text {
+  font-size: 1.6rem;
+}
+
+.strategy .partner-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.strategy .partner-logo {
+  text-align: center;
+  margin: 0 auto;
+  height: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.partners .partner-logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.partners .partner-logo-box .partnership-logo {
+  width: 12.8rem;
+}
+
+.partners .partner-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.partners .partner-heading-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.partners .partner-text-content {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.work {
+  height: 100vh;
+  position: relative;
+}
+
+.work .work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.work .work-container .work-heading {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 4.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.work .work-container .work-text {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.work .work-container .work-btn {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 1.2rem 2.4rem;
+  -webkit-transition: all 1ms;
+  transition: all 1ms;
+}
+
+.work .work-container .work-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid transparent;
+  color: #000;
+}
+
+.footer {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-col {
+  gap: 40rem;
+}
+
+.footer .footer-text-header {
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.footer .footer-text-content {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 9.6rem;
+}
+
+.footer .footer-address-box {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  gap: 2rem;
+  margin-bottom: 9.6rem;
+}
+
+.footer .footer-link-box {
+  margin-bottom: 8rem;
+}
+
+.footer .footer-icon {
+  font-size: 1.8rem;
+  padding: 1rem;
+  max-width: 3.2rem;
+  max-height: 3.2rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.footer .copyright {
+  font-size: 1.8rem;
+}
+
+.footer .footer-cta-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.footer .footer-cta-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.footer .cta-form input {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0.5rem;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer .cta-form-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  padding: 1rem 3.2rem;
+  border: 1px solid #000;
+  font-size: 1.8rem;
+  margin-bottom: 22rem;
+}
+
+.footer .footer-logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 8.2rem;
+}
+
+.footer .footer-logo-box .footer-logo {
+  height: 100%;
+}
+
+.footer .designed-text {
+  font-size: 1.8rem;
+}
+
+.parallax {
+  /* The image used */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.2)), to(rgba(34, 34, 34, 0.05))), -webkit-gradient(linear, left top, right top, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.05)), to(rgba(34, 34, 34, 0.05))), url("/img/service.jpeg");
+  background-image: linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.05)), linear-gradient(to right, rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.05), rgba(34, 34, 34, 0.05)), url("/img/service.jpeg");
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.2)), to(rgba(34, 34, 34, 0.05))), -webkit-gradient(linear, left top, right top, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.05)), to(rgba(34, 34, 34, 0.05))), url("/img/selling.webp");
+  background-image: linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.05)), linear-gradient(to right, rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.05), rgba(34, 34, 34, 0.05)), url("/img/selling.webp");
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.4)), to(rgba(34, 34, 34, 0.05))), -webkit-gradient(linear, left top, right top, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.4)), to(rgba(34, 34, 34, 0.4))), url("/img/interior2.jpg");
+  background-image: linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.05)), linear-gradient(to right, rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4)), url("/img/interior2.jpg");
+  /* Set a specific height */
+  min-height: 90vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.4)), to(rgba(34, 34, 34, 0.05))), -webkit-gradient(linear, left top, right top, from(rgba(34, 34, 34, 0.4)), color-stop(rgba(34, 34, 34, 0.4)), to(rgba(34, 34, 34, 0.4))), url("/img/interior.jpg");
+  background-image: linear-gradient(rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.05)), linear-gradient(to right, rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4)), url("/img/interior.jpg");
+  /* Set a specific height */
+  height: 90vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 87em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 40%;
+  }
+  body .about-img {
+    width: 100%;
+  }
+  body .footer {
+    height: 150vh;
+  }
+}
+
+@media only screen and (max-width: 49em) {
+  html {
+    font-size: 45%;
+  }
+  .marketing-content-header {
+    text-align: center;
+  }
+  .buying .buying-subheading {
+    font-size: 1.8em !important;
+  }
+  .buying .buying-primary-heading {
+    font-size: 2.8em !important;
+  }
+  .buying .buying-text {
+    font-size: 1.8em !important;
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 40%;
+  }
+  .about .about-img {
+    width: 100%;
+    height: 100%;
+  }
+  .strategy {
+    height: 100vh !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 9.6rem 4rem 0 4rem;
+  }
+  .footer {
+    height: 180vh !important;
+    padding: 8rem !important;
+  }
+}
+
+@media only screen and (max-width: 37em) {
+  html {
+    font-size: 19% !important;
+  }
+  .navbar {
+    padding: 4em !important;
+  }
+  .navbar .header-logo {
+    height: 6.4em;
+  }
+  .navbar-toggler-icon {
+    height: 4em !important;
+    width: 4em !important;
+  }
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3em;
+    list-style: none;
+    font-size: 500% !important;
+    height: 100vh;
+    color: #fff;
+  }
+  .header-grid-col-1 {
+    position: absolute;
+    left: -3%;
+  }
+  .heading-primary {
+    font-size: 4.8em !important;
+  }
+  .heading-secondary {
+    font-size: 3em !important;
+  }
+  .header-btn {
+    font-size: 4.8em !important;
+    padding: 0.5em 2em !important;
+  }
+  .parallax {
+    height: 100vh !important;
+  }
+  .marketing-content {
+    height: 100vh !important;
+    padding-top: 0;
+    font-size: 150% !important;
+  }
+  .marketing-content .marketing-primary-heading {
+    font-size: 4.8em !important;
+    text-align: center;
+  }
+  .marketing-content .marketing-subheading {
+    font-size: 3.2em !important;
+    text-align: center;
+  }
+  .marketing-content .marketing-text-header {
+    font-size: 4em !important;
+  }
+  .marketing-content .marketing-text {
+    font-size: 3em !important;
+  }
+  .parallax2 {
+    height: 100vh !important;
+  }
+  .selling {
+    font-size: 160%;
+  }
+  .selling .selling-col {
+    margin-bottom: 6.4em !important;
+  }
+  .selling .selling-header {
+    font-size: 4.8em !important;
+    padding-top: 1em !important;
+  }
+  .selling .selling-header-secondary {
+    font-size: 4.8em !important;
+    padding: 0.1em;
+    font-weight: 400;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .selling .selling-text {
+    font-size: 3em !important;
+    font-weight: 400;
+  }
+  .buying {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 4rem;
+    height: 90vh !important;
+    padding: 0 !important;
+    font-size: 150% !important;
+  }
+  .buying .buying-text-heading {
+    margin-bottom: 1em;
+  }
+  .about .about-text-header {
+    padding: 0.5em 2em;
+    font-size: 4.8em;
+    font-weight: 700;
+  }
+  .about .about-text {
+    font-size: 3.6em !important;
+    font-weight: 400;
+  }
+  .strategy {
+    height: 100vh !important;
+    padding: 4em;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 130% !important;
+  }
+  .strategy .strategy-primary-heading {
+    font-size: 4.8em;
+    font-weight: 700;
+  }
+  .strategy .strategy-subheading {
+    font-size: 3.2em;
+  }
+  .strategy .strategy-text {
+    font-size: 3.2em;
+  }
+  .strategy .strategy-grid-title {
+    font-size: 4em;
+  }
+  .strategy .strategy-grid-text {
+    font-size: 3.2em;
+  }
+  .strategy .partner-logo {
+    width: 70em;
+    height: auto;
+    margin-top: 4.8em;
+  }
+  .buying {
+    padding: 8em;
+    height: 80vh;
+  }
+  .buying-subheading {
+    font-size: 3.2em !important;
+  }
+  .buying-primary-heading {
+    font-size: 4.8em !important;
+  }
+  .buying-text-heading {
+    font-size: 2.4em !important;
+    padding: 1em !important;
+    height: 3em !important;
+    width: 3em !important;
+  }
+  .buying-text {
+    font-size: 3.2em !important;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 120% !important;
+  }
+  .about .about-text-header {
+    display: inline-block;
+    padding: 0;
+  }
+  .about .about-text {
+    padding: 0;
+  }
+  .parallax3 {
+    background: none;
+  }
+  .parallax4 {
+    height: 100vh;
+  }
+  .partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 12.8rem;
+    padding: 4rem;
+    font-size: 150% !important;
+  }
+  .partners .partner-heading-text {
+    font-size: 3.2em;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+  }
+  .partners .partner-text-content {
+    font-size: 3em;
+    margin-bottom: 1em;
+    font-weight: 400;
+  }
+  .partners .partner-img {
+    margin-bottom: 4em;
+  }
+  .work .work-heading {
+    font-size: 6.4em !important;
+  }
+  .work .work-text {
+    font-size: 3.2em !important;
+  }
+  .work .work-btn {
+    font-size: 4.8em !important;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 110vh !important;
+    font-size: 115% !important;
+  }
+  .footer .footer-col {
+    padding: 6.4rem;
+    gap: 4rem;
+  }
+  .footer .footer-text-header {
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", serif;
+    font-size: 4.8em;
+    font-weight: 700;
+  }
+  .footer .footer-text-content {
+    font-size: 3.2em;
+    font-weight: 400;
+    margin-bottom: 3.2em;
+  }
+  .footer .footer-address-box {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2.4em;
+    gap: 2rem;
+    margin-bottom: 4.8rem;
+  }
+  .footer .footer-address-head {
+    font-size: 1.8em;
+  }
+  .footer .footer-address-text {
+    font-size: 1.2em;
+  }
+  .footer .footer-contact-head {
+    font-size: 1.8em;
+  }
+  .footer .footer-contact-text {
+    font-size: 1.2em;
+    text-transform: lowercase;
+  }
+  .footer .footer-link-box {
+    margin-bottom: 2.4em;
+  }
+  .footer .footer-icon {
+    font-size: 1.8em;
+    padding: 1em;
+    max-width: 3em;
+    max-height: 3em;
+    background-color: #000;
+    color: #fff;
+    border-radius: 100%;
+  }
+  .footer .copyright {
+    font-size: 3.2em;
+  }
+  .footer .footer-cta-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 4.8em;
+    margin-bottom: 2rem;
+  }
+  .footer .footer-cta-text {
+    font-size: 3.2em;
+    font-weight: 400;
+  }
+  .footer .cta-form input {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 0.5em;
+    outline: none;
+    cursor: pointer;
+    font-size: 3.2em;
+    margin-bottom: 2em;
+  }
+  .footer .cta-form-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 1em 3.2em;
+    border: 1px solid #000;
+    font-size: 3.2em;
+  }
+  .footer .footer-logo-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4.8em;
+    margin-bottom: 4.8em;
+  }
+  .footer .footer-logo-box .footer-logo {
+    max-width: 9.6em;
+  }
+  .footer .designed-text {
+    font-size: 3.2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
